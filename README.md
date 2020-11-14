@@ -2,7 +2,7 @@
  * @Author: ming
  * @LastEditors: ming
  * @Date: 2020-11-14 21:12:15
- * @LastEditTime: 2020-11-14 22:42:44
+ * @LastEditTime: 2020-11-14 22:56:03
  * @FilePath: /zero-demo/README.md
  * @Description: Description
 -->
@@ -110,6 +110,7 @@ rpc/add/_add -f rpc/add/etc/add2.yaml > /dev/null 2>&1 &
 
 该项目使用docker,快速搭建运行环境,以流畅体验go-zero.
 结合科学上网,体验更佳.因为docker启动时,会自动拉取国外服务器上的镜像.
+or [参考](https://y0ngb1n.github.io/a/docker-registry-mirrors.html) Docker Hub 镜像加速器.
 
 # 感谢
 
