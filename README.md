@@ -2,7 +2,7 @@
  * @Author: ming
  * @LastEditors: ming
  * @Date: 2020-11-14 21:12:15
- * @LastEditTime: 2020-11-14 22:56:03
+ * @LastEditTime: 2020-11-14 22:57:36
  * @FilePath: /zero-demo/README.md
  * @Description: Description
 -->
@@ -111,6 +111,22 @@ rpc/add/_add -f rpc/add/etc/add2.yaml > /dev/null 2>&1 &
 该项目使用docker,快速搭建运行环境,以流畅体验go-zero.
 结合科学上网,体验更佳.因为docker启动时,会自动拉取国外服务器上的镜像.
 or [参考](https://y0ngb1n.github.io/a/docker-registry-mirrors.html) Docker Hub 镜像加速器.
+
+```sh
+sudo mkdir -p /etc/docker
+sudo tee /etc/docker/daemon.json <<-'EOF'
+{
+    "registry-mirrors": [
+        "https://1nj0zren.mirror.aliyuncs.com",
+        "https://docker.mirrors.ustc.edu.cn",
+        "http://f1361db2.m.daocloud.io",
+        "https://registry.docker-cn.com"
+    ]
+}
+EOF
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
 
 # 感谢
 
