@@ -2,4 +2,6 @@ db/
 etcd_data/
 .vscode/settings.json
 .DS_Store
+api/_api
 rpc/add/_add
+rpc/check/_check
