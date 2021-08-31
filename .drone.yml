@@ -13,10 +13,8 @@ steps:
   - echo `pwd`
   - scp docker-compose.yml bjt:~/signal-server2/
 - name: foo
-  image: alpine
   commands:
-  - echo this should never run if branch is develop
-  - echo the current branch is $DRONE_BRANCH
+  - drone info
 
 # ---
 # kind: pipeline
