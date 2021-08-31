@@ -1,10 +1,12 @@
 kind: pipeline
-type: docker
-name: foo
+type: exec
+name: default
+
+platform:
+  os: darwin
+  arch: amd64
 
 steps:
-- name: foo
-  image: alpine
+- name: greeting
   commands:
-  - echo this should never run if branch is develop
-  - echo the current branch is $DRONE_BRANCH
+  - echo hello world
