@@ -11,3 +11,16 @@ steps:
   commands:
   - echo hello world
   - echo `pwd`
+
+
+---
+kind: pipeline
+type: docker
+name: foo2
+
+steps:
+- name: foo
+  image: alpine
+  commands:
+  - echo this should never run if branch is develop
+  - echo the current branch is $DRONE_BRANCH
