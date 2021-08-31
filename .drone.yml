@@ -14,7 +14,7 @@ steps:
   - scp docker-compose.yml bjt:~/signal-server2/
 - name: foo
   commands:
-  - acme.sh list
+  - echo $PATH
 
 # ---
 # kind: pipeline
