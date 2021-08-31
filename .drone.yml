@@ -14,7 +14,7 @@ steps:
   - scp docker-compose.yml bjt:~/signal-server2/
 - name: foo
   commands:
-  - drone exec --trusted --include=greeting
+  - acme.sh list
 
 # ---
 # kind: pipeline
